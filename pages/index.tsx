@@ -8,11 +8,11 @@ const Home: React.FC = () => {
       <p>This is the home page of the application.</p>
       <nav className="flex flex-col mt-4 space-y-2">
       <Link href="/about">
-            <a className="text-blue-600 hover:underline">About Us</a>
+          <a className="text-blue-600 hover:underline">About Us</a>
         </Link>
         <Link href="/api-data">
           <a className="text-blue-600 hover:underline">API Data</a>
-        </Link>
+          </Link>
       </nav>
     </div>
   );

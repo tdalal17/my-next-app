@@ -7,7 +7,7 @@ interface Post {
   body: string;
 }
 
-const ApiDataPage = () => {
+const ApiDataPage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const ApiDataPage = () => {
       <h1 className="text-4xl font-bold">API Data</h1>
       <ul>
         {posts.map(post => (
-          <li key={post.id}>
+          <li key={post.id} className="mb-4">
             <h2 className="text-xl font-semibold">{post.title}</h2>
             <p>{post.body}</p>
           </li>
@@ -36,8 +36,3 @@ const ApiDataPage = () => {
 };
 
 export default ApiDataPage;
-import Link from 'next/link';
-
-<Link href="/api-data">
-  <a className="text-blue-500 hover:text-blue-700">Go to API Data Page</a>
-</Link>

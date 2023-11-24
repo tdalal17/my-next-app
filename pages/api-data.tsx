@@ -25,7 +25,7 @@ const ApiDataPage: React.FC = () => {
     <div className="container mx-auto">
       <h1 className="text-4xl font-bold">API Data</h1>
       <nav className="mb-4">
-        <Link href="/index">
+        <Link href="/">
           <a className="text-blue-600 hover:underline">Go back home</a>
         </Link>
       </nav>

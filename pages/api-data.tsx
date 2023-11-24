@@ -36,3 +36,8 @@ const ApiDataPage = () => {
 };
 
 export default ApiDataPage;
+import Link from 'next/link';
+
+<Link href="/api-data">
+  <a className="text-blue-500 hover:text-blue-700">Go to API Data Page</a>
+</Link>

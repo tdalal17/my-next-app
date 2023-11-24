@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link'; // Import Link from next/link
 
 interface Post {
   userId: number;
@@ -23,6 +24,12 @@ const ApiDataPage: React.FC = () => {
   return (
     <div className="container mx-auto">
       <h1 className="text-4xl font-bold">API Data</h1>
+      {/* Add a Link to navigate back to the home page */}
+      <nav className="mb-4">
+        <Link href="/">
+          <a className="text-blue-600 hover:underline">Go back home</a>
+        </Link>
+      </nav>
       <ul>
         {posts.map(post => (
           <li key={post.id} className="mb-4">

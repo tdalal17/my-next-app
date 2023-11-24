@@ -7,8 +7,6 @@ const HomePage = () => {
     </div>
   );
 };
-
-export default HomePage;
 import Link from 'next/link';
 
 <Link href="/api-data">

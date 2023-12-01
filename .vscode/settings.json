@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f9754bce-a97e-4409-babb-5d071beda211/resourceGroups/ITMD443/providers/Microsoft.Web/sites/ITMD-443-lab3",
+    "appService.deploySubpath": ".next"
+}
